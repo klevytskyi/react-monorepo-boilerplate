@@ -26,10 +26,12 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        sideEffects: true,
         use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.scss$/,
+        sideEffects: true,
         use: [
           'style-loader',
           {

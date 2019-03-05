@@ -5,6 +5,8 @@ To install dependencies please run `yarn lerna bootstrap` in repository root.
 `yarn build`
 To watch files when development
 `yarn watch`
+## Build Storybook
+`yarn build:storybook` will build storybook to static assets in `./storybook-dist` that can be uploaded to server
 ## Development
 For development, please use [storybook](https://github.com/storybooks/storybook) stories.
 `yarn start`
