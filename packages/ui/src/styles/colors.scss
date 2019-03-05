@@ -1,0 +1,59 @@
+//colors
+$text: #091e42;
+$dark-primary: #003f9e;
+$primary: #0065ff;
+$light-primary: #4c9aff;
+$secondary: #add0fd;
+$selected: #deebff;
+$hover: #f4f8ff;
+
+$input: #3f4f6b;
+$dark-grey: #8690a2;
+$grey: #bdc3cc;
+$dividers: #e9eaec;
+$success: #57d9a3;
+$follow-up: #ff991f;
+$error: #ff431f;
+
+$white: #fff;
+
+$colors: (
+  text: $text,
+  darkPrimary: $dark-primary,
+  primary: $primary,
+  lightPrimary: $light-primary,
+  secondary: $secondary,
+  selected: $selected,
+  hover: $hover,
+
+  input: $input,
+  darkGrey: $dark-grey,
+  grey: $grey,
+  dividers: $dividers,
+  success: $success,
+  followUp: $follow-up,
+  error: $error,
+
+  white: $white
+);
+
+
+:export {
+  text: $text;
+  darkPrimary: $dark-primary;
+  primary: $primary;
+  lightPrimary: $light-primary;
+  secondary: $secondary;
+  selected: $selected;
+  hover: $hover;
+
+  input: $input;
+  darkGrey: $dark-grey;
+  grey: $grey;
+  dividers: $dividers;
+  success: $success;
+  followUp: $follow-up;
+  error: $error;
+
+  white: $white;
+}

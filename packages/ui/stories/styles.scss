@@ -1,0 +1,19 @@
+@import 'core';
+
+:global {
+  html {
+    font-family: 'Raleway', sans-serif;
+
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button,
+  a {
+    outline: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

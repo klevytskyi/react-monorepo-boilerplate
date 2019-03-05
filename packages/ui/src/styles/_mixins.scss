@@ -1,0 +1,7 @@
+/* Mixins are going next */
+
+@mixin font($size, $type, $color) {
+  color: $color;
+  font-size: $size;
+  font-weight: $type;
+}
