@@ -1,13 +1,9 @@
 import React from 'react';
 
-import { View, Text } from '@rmb/ui';
+import { View } from '@rmb/ui';
 
 import s from './styles.scss';
 
-const App = () => (
-  <View className={s.view}>
-    <Text>Content</Text>
-  </View>
-);
+const App = () => <View className={s.view}>I am just rendering div with text.</View>;
 
 export default App;

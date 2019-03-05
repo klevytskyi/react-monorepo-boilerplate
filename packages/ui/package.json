@@ -9,6 +9,7 @@
   "scripts": {
     "start": "start-storybook -p 9001 -c .storybook",
     "build": "npm run clean && cross-env BABEL_ENV=production rollup --config rollup.config.js",
+    "build:storybook": "build-storybook -c .storybook -o storybook-dist",
     "watch": "npm run clean && rollup --config rollup.config.js",
     "clean": "rimraf lib",
     "eslint": "eslint config src stories  --ext .js --ext .jsx",
@@ -52,6 +53,7 @@
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "classnames": "^2.2.6",
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.0",
     "eslint": "^5.14.0",
@@ -73,7 +75,11 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.16.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
     "react-hot-loader": "^4.7.0",
+    "react-router-dom": "^4.3.1",
     "rimraf": "^2.6.3",
     "rollup": "^1.2.2",
     "rollup-plugin-alias": "^1.5.1",
@@ -97,8 +103,5 @@
     "webpack-bundle-analyzer": "^3.0.4",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14"
-  },
-  "dependencies": {
-    "react-router-dom": "^4.3.1"
   }
 }

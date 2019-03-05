@@ -13,7 +13,6 @@
     "prettier"
   ],
   "rules": {
-    "compat/compat": "error",
     "prettier/prettier": "error",
     "jsx-a11y/anchor-is-valid": ["error", {
       "components": [ "Link" ],

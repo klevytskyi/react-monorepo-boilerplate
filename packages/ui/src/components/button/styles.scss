@@ -11,11 +11,11 @@
   padding: 7px 22px;
 
   &Primary {
-    color: $white;
     background-color: $primary;
+    color: $white;
 
     &:hover {
-      background-color: $dark-primary;
+      background-color: darken($primary, 1.2);
     }
 
     &:focus {
@@ -25,23 +25,22 @@
     &:active {
       background-color: $text;
     }
-
   }
 
   &Secondary {
+    background-color: $secondary;
     color: $text;
-    background-color: $selected;
 
     &:hover {
       background-color: $secondary;
     }
 
     &:focus {
-      border-color: $light-primary;
+      border-color: lighten($primary, 0.2);
     }
 
     &:active {
-      background-color: $light-primary;
+      background-color: lighten($primary, 0.2);
     }
   }
 
@@ -54,6 +53,6 @@
   &:disabled,
   &Disabled {
     opacity: 0.4;
-    pointer-events: none!important;
+    pointer-events: none !important;
   }
 }

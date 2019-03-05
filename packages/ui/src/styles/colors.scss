@@ -1,59 +1,20 @@
 //colors
 $text: #091e42;
-$dark-primary: #003f9e;
-$primary: #0065ff;
-$light-primary: #4c9aff;
-$secondary: #add0fd;
-$selected: #deebff;
-$hover: #f4f8ff;
-
-$input: #3f4f6b;
-$dark-grey: #8690a2;
-$grey: #bdc3cc;
-$dividers: #e9eaec;
-$success: #57d9a3;
-$follow-up: #ff991f;
-$error: #ff431f;
-
+$primary: rgb(0, 101, 255);
+$secondary: rgb(0, 42, 112);
 $white: #fff;
 
 $colors: (
   text: $text,
-  darkPrimary: $dark-primary,
   primary: $primary,
-  lightPrimary: $light-primary,
   secondary: $secondary,
-  selected: $selected,
-  hover: $hover,
-
-  input: $input,
-  darkGrey: $dark-grey,
-  grey: $grey,
-  dividers: $dividers,
-  success: $success,
-  followUp: $follow-up,
-  error: $error,
-
   white: $white
 );
 
+/* You can do `import colors from 'colors.scss'` in your js code to get variables in JSON format */
 
 :export {
-  text: $text;
-  darkPrimary: $dark-primary;
-  primary: $primary;
-  lightPrimary: $light-primary;
-  secondary: $secondary;
-  selected: $selected;
-  hover: $hover;
-
-  input: $input;
-  darkGrey: $dark-grey;
-  grey: $grey;
-  dividers: $dividers;
-  success: $success;
-  followUp: $follow-up;
-  error: $error;
-
-  white: $white;
+  @each $name, $color in $colors {
+    #{$name}: $color;
+  }
 }
