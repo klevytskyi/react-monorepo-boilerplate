@@ -13,6 +13,8 @@
     }],
     "selector-pseudo-class-no-unknown": [true,
       ignorePseudoClasses: ["global", "export"],
-    ]
+    ],
+    "property-no-unknown": null,
+    "property-case": null
   }
 }

@@ -36,7 +36,7 @@ export default {
       extensions: ['.js', '.jsx', '.json'],
       preferBuiltins: false,
       customResolveOptions: {
-        moduleDirectory: ['node_modules', paths.src],
+        moduleDirectory: ['node_modules', paths.nodeModules, paths.src],
       },
     }),
     commonjs({
