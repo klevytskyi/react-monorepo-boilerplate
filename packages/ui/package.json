@@ -16,7 +16,9 @@
     "prettier": "prettier '{config,src,stories}/**/*.{js,jsx}' --write",
     "stylelint": "stylelint 'src/**/*.scss'"
   },
-  "sideEffects": ["**.css"],
+  "sideEffects": [
+    "**.css"
+  ],
   "lint-staged": {
     "*.{js,jsx}": [
       "eslint --fix",
