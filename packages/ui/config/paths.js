@@ -10,5 +10,6 @@ paths.entryPoint = path.join(paths.src, 'index.jsx');
 paths.appConfig = path.join(paths.src, 'config', `${process.env.PROJECT_ENV || 'development'}.js`);
 paths.scss = path.join(paths.src, 'styles');
 paths.publicFiles = path.join(paths.root, 'public');
+paths.storybook = path.join(paths.root, 'storybook-dist');
 
 module.exports = paths;

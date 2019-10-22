@@ -2,25 +2,32 @@
   "name": "react-monorepo-boilerplate",
   "version": "2.0.0",
   "description": "Single page application",
-  "author": "Panenco <info@panenco.com>",
+  "author": "Kostiantyn Levytskyi <le.konstantos@gmail.com>",
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "lerna": "lerna",
-    "bootstrap": "npm run lerna bootstrap",
+    "build": "lerna run build",
+    "clean": "lerna run clean",
+    "eslint": "lerna run eslint",
+    "start": "yarn server start",
+    "bootstrap": "yarn lerna bootstrap",
     "ui": "cd packages/ui && yarn",
-    "app": "cd packages/app && yarn"
+    "app": "cd packages/app && yarn",
+    "server": "cd packages/server && yarn"
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lerna run --concurrency 1 --stream pre-commit"
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.5.2",
-    "@commitlint/config-conventional": "^7.5.0",
-    "husky": "^1.3.1",
-    "lerna": "^3.13.0"
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "husky": "^3.0.9",
+    "lerna": "^3.18.2",
+    "lint-staged": "^9.4.2"
   },
   "workspaces": [
     "packages/*"

@@ -6,6 +6,7 @@ const paths = require('./paths');
 
 module.exports = {
   mode: 'development',
+  devtool: 'source-map',
   entry: paths.entryPoint,
   output: {
     path: paths.outputPath,
@@ -44,14 +45,18 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
-              localIdentName: '[local]-[hash:base64:5]',
+              modules: {
+                mode: 'local',
+                localIdentName: '[local]-[hash:base64:5]',
+              },
             },
           },
           {
             loader: 'sass-loader',
             options: {
-              includePaths: [paths.scss],
+              sassOptions: {
+                includePaths: [paths.scss],
+              },
             },
           },
         ],

@@ -74,8 +74,10 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
-              localIdentName: '[hash:base64:5]',
+              modules: {
+                mode: 'local',
+                localIdentName: '[hash:base64:5]',
+              },
             },
           },
           {
@@ -87,7 +89,9 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              includePaths: [paths.scss],
+              sassOptions: {
+                includePaths: [paths.scss],
+              },
             },
           },
         ],
